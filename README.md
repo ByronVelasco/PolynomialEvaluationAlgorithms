@@ -1,42 +1,35 @@
-# Complexity of Sorting Algorithms
+# Complexity of Polynomial Evaluation Algorithms
 
 ## Summary
 
-This project presents an experimental study of the time complexity of fundamental sorting algorithms. Through systematic implementation, testing, and analysis, we empirically validated their theoretical performance and compared their execution times across various input scenarios. The goal is to bridge the gap between theoretical analysis and practical behavior using structured testing and visualization.
+This project explores and compares different algorithms for polynomial evaluation, focusing on their computational complexity and practical performance. The core aim is to analyze how algorithmic design impacts execution time, especially when dealing with high-degree polynomials.
 
 ## Objectives
 
-- Experimentally demonstrate the time complexity of common sorting algorithms.
-- Compare the execution speed of each algorithm under different input conditions.
+- To implement and test different methods of polynomial evaluation.
+- To measure and compare their performance through computational experiments.
+- To validate theoretical time complexity using empirical data.
+- To build a modular and extensible codebase for future testing or algorithm inclusion.
 
 ## Conclusions
 
-In this study, we experimentally validated the theoretical time complexities of various sorting algorithms. We also compared their performance across different input scenarios. Since data in real-world applications is typically unordered, the average-case performance is often the most relevant. Under these conditions, **QuickSort** and **MergeSort** consistently emerged as the fastest algorithms, achieving an average execution time of approximately **0.02 seconds** for lists containing **10,000 elements**.
-
-On the other hand, **BubbleSort**, **InsertionSort**, and **SelectionSort** demonstrated significantly slower runtimes in all test cases, aligning with their known quadratic time complexity. **HeapSort**, while slightly slower than QuickSort and MergeSort, still maintained excellent average performance and is widely appreciated not only as a sorting algorithm but also as a foundational data structure for implementing efficient priority queues—an aspect we plan to explore further in future work.
+The Naive Evaluation method has a quadratic time complexity ($O(n^2)$) as it computes each power of `x` explicitly. In contrast, the Horner’s Rule method has a linear time complexity ($O(n)$), achieved by rewriting the polynomial in nested form to minimize operations. The experiments confirmed the theoretical behavior, showing that Horner's Rule is significantly faster for high-degree polynomials. Therefore, for practical and large-scale applications, Horner’s Rule is the preferred method due to its efficiency.
 
 ## Project Structure
 
 The repository is organized into the following components:
 
 - **Individual Algorithm Folders**:  
-  Each sorting algorithm (e.g., BubbleSort, InsertionSort, MergeSort, etc.) is placed in its own folder. Every folder contains the implementation and a detailed explanation in its corresponding `README.md`.
+  Each polynomial evaluation algorithm (naive evaluation, Horne's rule) is placed in its own folder. Every folder contains the implementation and a detailed explanation in its corresponding `README.md`.
 
 - **`Tests/` Folder**:  
-  Contains test scripts that evaluate the correctness and behavior of each sorting algorithm.
-
-- **`ListsMaker/` Folder**:  
-  Contains functions that generate input lists:
-  - Random lists
-  - Ascending sorted lists
-  - Descending sorted lists
+  Contains test scripts that evaluate the correctness and behavior of each evaluation algorithm.
 
 - **`img/` Folder**:  
-  Stores the cited diagrams used to explain each algorithm and the output images generated during experimentation.  
-  Note: Some experimental plots may be missing from this folder, as saving images directly from the script resulted in overwriting files. However, all plots are also displayed inline within the script `ComplexityMachine.ipynb`.
+  Stores the output images generated during experimentation.
 
-- **`7 ComplexityMachine/` Folder**:  
-  Contains the notebook `ComplexityMachine.ipynb`, which performs the experimental analysis of sorting algorithms and presents the conclusions.
+- **`3 ComplexityMachine/` Folder**:  
+  Contains the notebook `ComplexityMachine.ipynb`, which performs the experimental analysis of polynomial evaluation algorithms and presents the conclusions.
 
 ## How to Run This Project
 
@@ -44,8 +37,8 @@ The repository is organized into the following components:
    Open a terminal and run:
 
    ```bash
-   git clone https://github.com/ByronVelasco/Complexity-of-Sorting-Algorithms.git
-   cd Complexity-of-Sorting-Algorithms
+   git clone https://github.com/ByronVelasco/Complexity-of-Polynomial-Evaluation-Algorithms.git
+   cd Complexity-of-Polynomial-Evaluation-Algorithms
 
 2. **Install the required libraries**
    
@@ -59,7 +52,7 @@ The repository is organized into the following components:
    Use your preferred Python environment (like Jupyter, VS Code, or Google Colab) and open:
 
    ```
-   7 ComplexityMachine/ComplexityMachine.ipynb
+   3 ComplexityMachine/ComplexityMachine.ipynb
 
 4. **Run** the cells to perform the experiments and generate the visualizations.
 

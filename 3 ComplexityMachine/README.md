@@ -1,51 +1,42 @@
-# Experiment Engine: Sorting Algorithm Machines
+# Experiment Engine: Polynomial Evaluation Machine
 
-This module provides the experimental engine used to evaluate and compare the time complexity of sorting algorithms. It includes functions for testing algorithms across various scenarios and visualizing the results.
+This module provides the experimental engine used to evaluate and compare the time complexity of polynomial evaluation algorithms. It includes the visualization of the results.
 
 ## Machine Overview
 
-- A set of sizes of lists is defined in the variable `sizes`.
-- For each size, the sorting operation is repeated `reps` times to compute an **average execution time**. This reduces the impact of random system processes affecting timing.
-- The algorithms to be tested are listed in `algorithms`.
-- The input configurations (e.g., ascending, descending, and random lists) are stored in `scenarios`.
+- A set of grades of polynomials is defined in the variable `grades`.
+- For each grade, the polynomial evaluation is repeated `reps` times to compute an **average execution time**. This reduces the impact of random system processes affecting timing.
+- The algorithms to be tested are listed in `algorithm`.
 
-The execution times are stored in a list called `total_times`, where each entry corresponds to the average time for a specific size and scenario.
+The execution times are stored in a list called `total_times`, where each entry corresponds to the average time for a specific algorithm.
 
 ---
 
-## Types of Machines
+## Complexity Machine
 
-There are two experimental machines in the project:
-
-- `ComplexityMachine`:
-
-  Validates the **theoretical time complexity** of a single algorithm across multiple scenarios (random, ascending, descending).
-
-- `ComparisonMachine`:
-
-  Compares the **execution speed** of multiple algorithms under a **single scenario**.
+  Validates the **theoretical time complexity** of a single algorithm. It also allows to compare the execution time of both evaluation algorithms.
 
 ---
 
 ## Graphs and Visualization
 
-The plots generated in this project are **line plots**, each titled according to the algorithm or scenario used. All graphs are saved in the `img/` folder of the project, and also displayed within the notebook.
+The plots generated in this project are **line plots**, each titled according to the algorithm used. All graphs are saved in the `img/` folder of the project, and also displayed within the notebook.
 
 ### Plotting Functions
 
 - `ComplexityGraph`:
 
-  Used to plot the results obtained from `ComplexityMachine`. Compares one algorithm across different list types.
+  Used to plot the results obtained for a single algorithm.
 
 - `ComparisonGraph`:  
 
-  Used to plot the results from `ComparisonMachine`. Compares multiple algorithms in one scenario.
+  Used to plot the results obtained for both algorithms.
 
 ---
 
 ## MachineCall Utility
 
-The function `MachineCall` acts as a controller. Based on the input data, it decides whether to use `ComplexityMachine` or `ComparisonMachine`, ensuring that the appropriate logic and graphing function is triggered.
+The function `MachineCall` acts as a controller. Based on the input data, it decides whether to use `ComplexityGraph` or `ComparisonGraph`, ensuring that the appropriate logic and graphing function is triggered.
 
 ---
 

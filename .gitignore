@@ -12,5 +12,3 @@
 # Optional: Ignore temporary files
 *.log
 *.tmp
-
-img/.references/
