@@ -8,9 +8,7 @@ This module contains the file `HornerRule.ipynb`, which implements the Horner's 
 
 Horner’s rule is an efficient method for evaluating polynomials that reduces the number of multiplications required. Instead of computing each power of *x* separately, it rewrites the polynomial in nested form:
 
-$
-P(x) = a_0 + x(a_1 + x(a_2 + ... + x(a_{n-1} + x\cdot a_n))
-$
+$P(x) = a_0 + x(a_1 + x(a_2 + ... + x(a_{n-1} + x\cdot a_n))$
 
 This approach is efficient for large-degree polynomials.
 
