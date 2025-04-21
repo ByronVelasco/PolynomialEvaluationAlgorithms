@@ -37,8 +37,8 @@ The repository is organized into the following components:
    Open a terminal and run:
 
    ```bash
-   git clone https://github.com/ByronVelasco/Complexity-of-Polynomial-Evaluation-Algorithms.git
-   cd Complexity-of-Polynomial-Evaluation-Algorithms
+   git clone https://github.com/ByronVelasco/PolynomialEvaluationAlgorithms.git
+   cd PolynomialEvaluationAlgorithms
 
 2. **Install the required libraries**
    
