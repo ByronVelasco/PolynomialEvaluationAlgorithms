@@ -13,7 +13,7 @@ This project explores and compares different algorithms for polynomial evaluatio
 
 ## Conclusions
 
-The Naive Evaluation method has a quadratic time complexity ($O(n^2)$) as it computes each power of `x` explicitly. In contrast, the Horner’s Rule method has a linear time complexity ($O(n)$), achieved by rewriting the polynomial in nested form to minimize operations. The experiments confirmed the theoretical behavior, showing that Horner's Rule is significantly faster for high-degree polynomials. Therefore, for practical and large-scale applications, Horner’s Rule is the preferred method due to its efficiency.
+The Naive Evaluation method has a quadratic time complexity O($n^2$) as it computes each power of `x` explicitly. In contrast, the Horner’s Rule method has a linear time complexity O($n$), achieved by rewriting the polynomial in nested form to minimize operations. The experiments confirmed the theoretical behavior, showing that Horner's Rule is significantly faster for high-degree polynomials. Therefore, for practical and large-scale applications, Horner’s Rule is the preferred method due to its efficiency.
 
 ## Project Structure
 

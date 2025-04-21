@@ -6,9 +6,7 @@ This module contains the file `NaiveEvaluation.ipynb`, which implements the naiv
 
 The naive method for evaluating a polynomial consists of directly computing each term using the formula:
 
-$
-P(x) = a_0 + a_1 x + a_2 x^2 + \dots + a_n x^n
-$
+$P(x) = a_0 + a_1 x + a_2 x^2 + \dots + a_n x^n$
 
 This approach uses explicit exponentiation for each term. While easy to implement, it is not efficient.
 
