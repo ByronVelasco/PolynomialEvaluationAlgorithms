@@ -1,8 +1,8 @@
-# Experiment Engine: Polynomial Evaluation Machine
+# **Experiment Engine: Polynomial Evaluation Machine**
 
 This module provides the experimental engine used to evaluate and compare the time complexity of polynomial evaluation algorithms. It includes the visualization of the results.
 
-## Machine Overview
+## **Machine Overview**
 
 - A set of grades of polynomials is defined in the variable `grades`.
 - For each grade, the polynomial evaluation is repeated `reps` times to compute an **average execution time**. This reduces the impact of random system processes affecting timing.
@@ -12,17 +12,17 @@ The execution times are stored in a list called `total_times`, where each entry 
 
 ---
 
-## Complexity Machine
+## **Complexity Machine**
 
   Validates the **theoretical time complexity** of a single algorithm. It also allows to compare the execution time of both evaluation algorithms.
 
 ---
 
-## Graphs and Visualization
+## **Graphs and Visualization**
 
 The plots generated in this project are **line plots**, each titled according to the algorithm used. All graphs are saved in the `img/` folder of the project, and also displayed within the notebook.
 
-### Plotting Functions
+### **Plotting Functions**
 
 - `ComplexityGraph`:
 
@@ -34,7 +34,7 @@ The plots generated in this project are **line plots**, each titled according to
 
 ---
 
-## MachineCall Utility
+## **MachineCall Utility**
 
 The function `MachineCall` acts as a controller. Based on the input data, it decides whether to use `ComplexityGraph` or `ComparisonGraph`, ensuring that the appropriate logic and graphing function is triggered.
 

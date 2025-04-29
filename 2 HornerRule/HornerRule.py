@@ -1,5 +1,5 @@
 # %% [markdown]
-# ## Horner's Rule
+# ## **Horner's Rule**
 
 # %%
 def HornerRule(coeff, x):

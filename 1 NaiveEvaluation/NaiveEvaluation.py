@@ -1,5 +1,5 @@
 # %% [markdown]
-# ## Naive Polynomial Evaluation
+# ## **Naive Polynomial Evaluation**
 
 # %%
 def NaiveEvaluation(coeff, x):

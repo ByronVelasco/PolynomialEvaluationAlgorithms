@@ -1,21 +1,21 @@
-# Complexity of Polynomial Evaluation Algorithms
+# **Complexity of Polynomial Evaluation Algorithms**
 
-## Summary
+## **Summary**
 
 This project explores and compares different algorithms for polynomial evaluation, focusing on their computational complexity and practical performance. The core aim is to analyze how algorithmic design impacts execution time, especially when dealing with high-degree polynomials.
 
-## Objectives
+## **Objectives**
 
 - To implement and test different methods of polynomial evaluation.
 - To measure and compare their performance through computational experiments.
 - To validate theoretical time complexity using empirical data.
 - To build a modular and extensible codebase for future testing or algorithm inclusion.
 
-## Conclusions
+## **Conclusions**
 
 The Naive Evaluation method has a quadratic time complexity O($n^2$) as it computes each power of `x` explicitly. In contrast, the Horner’s Rule method has a linear time complexity O($n$), achieved by rewriting the polynomial in nested form to minimize operations. The experiments confirmed the theoretical behavior, showing that Horner's Rule is significantly faster for high-degree polynomials. Therefore, for practical and large-scale applications, Horner’s Rule is the preferred method due to its efficiency.
 
-## Project Structure
+## **Project Structure**
 
 The repository is organized into the following components:
 
@@ -31,7 +31,7 @@ The repository is organized into the following components:
 - **`3 ComplexityMachine/` Folder**:  
   Contains the notebook `ComplexityMachine.ipynb`, which performs the experimental analysis of polynomial evaluation algorithms and presents the conclusions.
 
-## How to Run This Project
+## **How to Run This Project**
 
 1. **Clone the repository**  
    Open a terminal and run:
@@ -58,11 +58,11 @@ The repository is organized into the following components:
 
    The results will be displayed directly in the notebook, and the corresponding graphs will be saved in the `img/` folder.
 
-## Final Note
+## **Final Note**
 
 The system developed for this project was created solely for academic purposes. It is not designed to be an optimal or production-grade benchmarking tool.
 
-## Reference
+## **Reference**
 
 This project follows the structure and theoretical foundations presented in the following textbook:
 
@@ -73,7 +73,7 @@ This project follows the structure and theoretical foundations presented in the 
 > LCCN: 2021037260  
 > Available at: [https://lccn.loc.gov/2021037260](https://lccn.loc.gov/2021037260)
 
-## License
+## **License**
 
 - The **source code** of this project is licensed under the [MIT License](./LICENSE).  
   You are free to use, modify, and distribute the code with proper attribution.
