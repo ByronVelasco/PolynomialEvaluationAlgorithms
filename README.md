@@ -19,7 +19,7 @@ The Naive Evaluation method has a quadratic time complexity O($n^2$) as it compu
 
 The repository is organized into the following components:
 
-- **Naive and Horner** Folder:  
+- **`Naive and Horner`** Folder:  
   This folder contains the implementation of algorithms `naive_evaluation` and `horner_rule` and their performance comparison with each other. It includes an experiment measuring and analyzing their execution times.
 
 - **`img/` Folder**:  
