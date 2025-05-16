@@ -19,44 +19,14 @@ The Naive Evaluation method has a quadratic time complexity O($n^2$) as it compu
 
 The repository is organized into the following components:
 
-- **Individual Algorithm Folders**:  
-  Each polynomial evaluation algorithm (naive evaluation, Horne's rule) is placed in its own folder. Every folder contains the implementation and a detailed explanation in its corresponding `README.md`.
-
-- **`Tests/` Folder**:  
-  Contains test scripts that evaluate the correctness and behavior of each evaluation algorithm.
+- **Naive and Horner** Folder:  
+  This folder contains the implementation of algorithms `naive_evaluation` and `horner_rule` and their performance comparison with each other. It includes an experiment measuring and analyzing their execution times.
 
 - **`img/` Folder**:  
   Stores the output images generated during experimentation.
 
-- **`3 ComplexityMachine/` Folder**:  
-  Contains the notebook `ComplexityMachine.ipynb`, which performs the experimental analysis of polynomial evaluation algorithms and presents the conclusions.
-
-## **How to Run This Project**
-
-1. **Clone the repository**  
-   Open a terminal and run:
-
-   ```bash
-   git clone https://github.com/ByronVelasco/PolynomialEvaluationAlgorithms.git
-   cd PolynomialEvaluationAlgorithms
-
-2. **Install the required libraries**
-   
-   Make sure you have Python installed (preferably 3.8+), then install the dependencies:
-   
-   ```bash
-   pip install -r requirements.txt
-
-3. **Open the main notebook**
-   
-   Use your preferred Python environment (like Jupyter, VS Code, or Google Colab) and open:
-
-   ```
-   3 ComplexityMachine/ComplexityMachine.ipynb
-
-4. **Run** the cells to perform the experiments and generate the visualizations.
-
-   The results will be displayed directly in the notebook, and the corresponding graphs will be saved in the `img/` folder.
+- **`project_functions` Python Script**:  
+  This Python script includes both algorithms developed specifically for this project.
 
 ## **Final Note**
 
@@ -81,5 +51,7 @@ This project follows the structure and theoretical foundations presented in the 
 - The **educational content** (including explanations, diagrams, and documentation) is shared under the  
   [Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/).  
   You may reuse and adapt it for non-commercial purposes with attribution.
+
+---
 
 © 2025 Byron Velasco
